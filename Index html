@@ -1,0 +1,206 @@
+# Devendra-B
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Devendra</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: radial-gradient(
+    circle at top, #18245a, #050510 70%
+  );
+}
+
+.card {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 35px 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.badge {
+  color: #ffd700;
+  border: 1px solid #ffd700;
+  padding: 9px 20px;
+  border-radius: 30px;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+h1 {
+  margin-top: 25px;
+  font-size: clamp(30px, 8vw, 55px);
+  color: #fff;
+  text-shadow: 0 0 15px #ff39c6,
+               0 0 35px #9d4dff;
+  animation: glow 2s infinite alternate;
+}
+
+.name {
+  margin: 15px 0;
+  font-size: clamp(38px, 10vw, 70px);
+  font-weight: 900;
+  background: linear-gradient(
+    90deg, #00eaff, #ff39c6, #ffd700
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: glow 1.5s infinite alternate;
+  overflow-wrap: anywhere;
+}
+
+.subtitle {
+  color: #ffd700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.message {
+  line-height: 2;
+  font-size: 16px;
+  color: #eeeeff;
+  max-width: 420px;
+}
+
+.cake {
+  font-size: 85px;
+  margin: 20px 0;
+  filter: drop-shadow(0 0 20px #ff39c6);
+  animation: bounce 2s infinite;
+}
+
+button {
+  border: none;
+  margin-top: 25px;
+  padding: 15px 28px;
+  border-radius: 35px;
+  background: linear-gradient(90deg, #ff39c6, #7c4dff);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 0 20px #b13cff;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.footer {
+  margin-top: 30px;
+  color: #ffd700;
+  font-size: 14px;
+}
+
+.balloon {
+  position: absolute;
+  bottom: -120px;
+  font-size: 45px;
+  animation: float 9s linear infinite;
+  opacity: 0.8;
+}
+
+.b1 { left: 5%; animation-delay: 0s; }
+.b2 { left: 22%; animation-delay: 3s; }
+.b3 { right: 15%; animation-delay: 1s; }
+.b4 { right: 4%; animation-delay: 5s; }
+
+@keyframes float {
+  from { transform: translateY(0) rotate(0); }
+  to { transform: translateY(-120vh) rotate(25deg); }
+}
+
+@keyframes glow {
+  from { filter: brightness(0.85); }
+  to { filter: brightness(1.4); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.confetti {
+  position: absolute;
+  top: -20px;
+  font-size: 22px;
+  animation: fall 6s linear infinite;
+}
+
+.c1 { left: 15%; animation-delay: 1s; }
+.c2 { left: 75%; animation-delay: 2s; }
+.c3 { left: 45%; animation-delay: 4s; }
+.c4 { left: 90%; animation-delay: 0s; }
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(600deg);
+  }
+}
+
+</style>
+</head>
+
+<body>
+<div class="card">
+
+  <div class="balloon b1">🎈</div>
+  <div class="balloon b2">🎈</div>
+  <div class="balloon b3">🎈</div>
+  <div class="balloon b4">🎈</div>
+
+  <div class="confetti c1">✨</div>
+  <div class="confetti c2">🎊</div>
+  <div class="confetti c3">⭐</div>
+  <div class="confetti c4">🎉</div>
+
+  <div class="badge">★ BIRTHDAY LEGEND ★</div>
+
+  <h1>HAPPY BIRTHDAY</h1>
+
+  <div class="name">DEVENDRA</div>
+
+  <div class="subtitle">👑 The One & Only Legend 👑</div>
+
+  <div class="cake">🎂</div>
+
+  <div class="message">
+    🎉 Happy Birthday Mere Bhai! 🎉<br>
+    Tu dost nahi, bhai hai! ❤️<br>
+    Teri life success se full rahe! 🚀<br>
+    Tere saare dreams poore hon! 💪<br>
+    Hamesha hasta aur chamakta reh! 😎
+  </div>
+
+  <button onclick="alert('🎉 Happy Birthday Devendra! ❤️ Best wishes from Sourabh! 🎂')">
+    🎁 CLICK FOR SURPRISE
+  </button>
+
+  <div class="footer">
+    Made with ❤️ by Sourabh<br><br>
+    🔥 FRIENDSHIP LEVEL: INFINITE 🔥
+  </div>
+
+</div>
+</body>
+</html>
+                              
